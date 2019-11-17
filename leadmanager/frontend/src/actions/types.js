@@ -1,17 +1,3 @@
 export const GET_LEADS = "GET_LEADS";
-
-const initialState = {
-    leads: []
-}
-
-export default function(state= initialState, action) {
-    switch(action.type) {
-        case GET_LEADS:
-            return {
-                ...state,
-                leads: action.payload
-            }
-        default: 
-            return state;
-    }
-}
+export const DELETE_LEAD = "DELETE_LEAD";
+export const ADD_LEAD = "ADD_LEAD";
